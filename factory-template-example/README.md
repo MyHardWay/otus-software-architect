@@ -17,7 +17,7 @@ Execution:
  
  Run python code from 'tests' directory:
  
-        python -m unittest tests.py
+        python -m unittest tests
         
 ## Classes diagram
 ![Alt](docs/FactoryDiagram.png)
