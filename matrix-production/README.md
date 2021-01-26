@@ -11,7 +11,7 @@ Run python code:
 
 ## Testing
  
- Run python code:
+ Run python code from 'tests' directory:
  
         python -m unittest tests.py
         
