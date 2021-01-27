@@ -15,9 +15,9 @@ Execution:
 
 ## Testing
  
- Run python code from 'tests' directory:
+Execution:
  
-        python -m unittest tests
+     python tests/tests.py 
         
 ## Classes diagram
 ![Alt](docs/FactoryDiagram.png)
