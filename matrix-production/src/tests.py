@@ -1,6 +1,10 @@
 import unittest
-from random import random
 from main import multiprocess_multiply
+import os, sys
+
+path_ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(path_)
+
 
 class MainTests(unittest.TestCase):
 
