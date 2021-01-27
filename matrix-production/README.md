@@ -11,9 +11,9 @@ Run python code:
 
 ## Testing
  
- Run python code from 'tests' directory:
+Execution:
  
-        python -m unittest tests
+    python tests.py 
         
 ## Actions diagram
 ![Alt](docs/ActionsDiagram.png)
