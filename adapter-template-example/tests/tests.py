@@ -17,23 +17,19 @@ class MainTests(unittest.TestCase):
         res_file = file_loader.get_file()
         self.assertTrue(res_file == get_files_directory() + 'F0.txt')
 
-
     def test_matrix_generator(self):
         generator = MatrixGenerator()
         file_name = generator.execute_matrix_generator()
-
         self.assertTrue(isinstance(generator.matrix_a, list))
         self.assertTrue(len(generator.matrix_a) == 3)
         self.assertTrue(len(generator.matrix_a[0]) == 3)
         self.assertTrue(file_name == get_files_directory() + 'F2.txt')
 
-
     def test_matrix_proccessor(self):
         file_loader = MatrixFileLoader()
         proccessor = MatrixProccessor(file_loader)
         sum_matrix = proccessor.proccess_matrix_summary()
-        self.assertTrue(sum_matrix == [[4324, 13791, 12028], [8254, 6508, 9696], [12156, 11515, 11991]])
-
+        self.assertTrue(sum_matrix == [[6178, 9289, 10191], [10234, 7497, 13192], [6540, 4619, 2502]])
 
     def test_matrix_adapter(self):
         generator = MatrixGenerator()

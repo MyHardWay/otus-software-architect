@@ -1,4 +1,4 @@
-s# Introduction
+# Introduction
 
 This project is an example of adapter template usage.
 
