@@ -1,7 +1,7 @@
 import argparse
 
-from BackwardFibonacciIterator import BackwardFibonacciIterator
-from ForwardFibonacciIterator import ForwardFibonachiIterator
+from BackwardFibonacciIterator import BackwardFibonacciIteratorFactory
+from ForwardFibonacciIterator import ForwardFibonachiIteratorFactory
 from FibonacciCollection import FibonacciCollection
 
 
@@ -9,9 +9,10 @@ def main(output_file, fibonacci_count, reverse):
     print('Start. Writting {0} of fibonacci sequence with reverse {1} to {2}'.format(output_file,
                                                                                     fibonacci_count, reverse))
     if reverse == 1:
-        iterator = BackwardFibonacciIterator
+        factory = BackwardFibonacciIteratorFactory()
     elif reverse == 2:
-        iterator = ForwardFibonachiIterator
+        factory = ForwardFibonachiIteratorFactory()
+    iterator = factory.create_iterator()
     collection = FibonacciCollection(iterator, fibonacci_count)
     for i in collection:
         try:
